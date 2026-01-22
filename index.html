@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<title>Show Hide Password</title>
+<link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+<script>
+function showHide() {
+  var p = document.getElementById("pwd");
+  var c = document.getElementById("box");
+
+  if (c.checked) {
+    p.type = "text";
+  } else {
+    p.type = "password";
+  }
+}
+</script>
+
+<div class="bod">
+  <div class="main">
+    <h2>Password Toggle</h2>
+
+    <div class="pass">
+      <span>Password :</span>
+      <input type="password" id="pwd">
+    </div>
+
+    <div class="show">
+      <input type="checkbox" id="box" onclick="showHide()">
+      <label>Show Password</label>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
